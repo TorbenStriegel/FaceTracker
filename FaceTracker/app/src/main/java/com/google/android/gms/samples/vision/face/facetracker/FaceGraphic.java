@@ -116,6 +116,6 @@ class FaceGraphic extends GraphicOverlay.Graphic {
         float top = y - yOffset;
         float right = x + xOffset;
         float bottom = y + yOffset;
-        canvas.drawRect(left, top, right, bottom, mBoxPaint);
+        canvas.drawCircle(x,y, (float) (face.getHeight()*1.5),mBoxPaint );
     }
 }
